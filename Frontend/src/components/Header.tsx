@@ -88,7 +88,7 @@ function Header() {
 
       {/* mobile view */}
       <div className="sm:hidden absolute top-8 right-5">
-        {showMenu ? (
+        {!user && showMenu ? (
           <ImCross
             onClick={() => setShowMenu(false)}
             className="text-4xl p-2 cursor-pointer"
